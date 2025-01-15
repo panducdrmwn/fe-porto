@@ -26,7 +26,7 @@ export default function Hero() {
          text-5xl md:text-7xl'>Pandu Cakrawala Darmawan</h1>
         <h3 className='bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent
          text-2xl font-light md:text-3xl'> Web Developer</h3>
-        <p className='text-white max-w-[600px] md:text-base text-pretty text-sm text-gray-400'>I'm a web developer skilled in React, Next.js, and Tailwind, focused on building clean
+        <p className=' max-w-[600px] md:text-base text-pretty text-sm text-gray-400'>I'm a web developer skilled in React, Next.js, and Tailwind, focused on building clean
           and scalable application. From front-end design to seamless database integration with MySQL.
           I create efficient solutions for dynamic user experiences. Let's build something great together!
         </p>

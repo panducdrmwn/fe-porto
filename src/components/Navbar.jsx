@@ -14,7 +14,7 @@ export default function Navbar() {
     }
     
   return (
-    <nav className="top-0 z-10 w-full items-center fixed border-b-2 px-16 py-6 text-white backdrop-blur-md flex md:justify-evenly">
+    <nav className="top-0 z-10 w-full items-center fixed border-b-gray-400 px-16 py-4 text-white backdrop-blur-md flex md:justify-evenly">
         <motion.section className="w-full flex justify-between items-center mx-auto max-w-7xl">
             <Link
             to="/"
