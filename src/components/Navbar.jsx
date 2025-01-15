@@ -1,25 +1,143 @@
 import { Link } from "react-router-dom";
 import logo from '../assets/p-high-resolution-logo.png';
-
+import {motion} from 'framer-motion'
+import {BsLinkedin} from 'react-icons/bs'
+import {BiX, BiMenu} from 'react-icons/bi'
+import { useState } from "react";
 
 export default function Navbar() {
+
+    const [isOpen, setIsOpen] = useState(false)
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen)
+    }
+    
   return (
-    <nav className="w-full items-center fixed border-b-8">
-        <div className="w-full flex justify-between items-center mx-auto max-w-7xl">
+    <nav className="top-0 z-10 w-full items-center fixed border-b-2 px-16 py-6 text-white backdrop-blur-md flex md:justify-evenly">
+        <motion.section className="w-full flex justify-between items-center mx-auto max-w-7xl">
             <Link
             to="/"
             className="text-white text-xl font-bold hover:text-gray-300"
             >
-                <img src={logo} alt="logo" className="w-11 h-11 object-contain"/>
+                <motion.div 
+                    animate={{rotate: [0,90,180,360]}}
+                    transition={{duration: 5, ease: 'easeInOut'}}    
+                >
+                <img src={logo} alt="logo" className="w-14 h-11 object-contain"/>
+                </motion.div>
             </Link>
+
             <ul>
-                <li className="list-none hiddden sm:flex flex-row gap-10 mr-10">
-                    <Link to="/" className="text-white hover:text-gray-300">About</Link>
+                <li className="list-none hidden md:flex flex-row gap-10 mr-10">
+                <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.2}}    
+                >
+                    <Link to="/#about" className="text-white hover:text-gray-300">About</Link>
+                </motion.div>
+                <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.4}}    
+                >
                     <Link to="/" className="text-white hover:text-gray-300">Work</Link>
+                </motion.div>
+                <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
+                >
+                    <Link to="/" className="text-white hover:text-gray-300">Tech</Link>
+                </motion.div>
+                <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
+                >
                     <Link to="/" className="text-white hover:text-gray-300">Contact</Link>
+                </motion.div>
                 </li>
             </ul>
-        </div>
+
+            <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.2}}   
+                    className="hidden md:flex" 
+                >
+                    <Link to="/#about" className="text-white hover:text-blue-300">
+                        <BsLinkedin/>
+                    </Link>
+            </motion.div>
+        </motion.section>
+
+        {isOpen ? (
+            <BiX onClick={toggleMenu} className="block md:hidden text-4xl"/>
+        ) : (
+            <BiMenu onClick={toggleMenu} className="block md:hidden text-4xl"/>
+        )}
+
+        {isOpen && (
+         
+            <motion.div
+                initial={{opacity: 0, x: 100}}
+                animate={{opacity: 1, x: 0}}
+                transition={{duration: 1, ease: 'easeOut', delay: 0.2}}   
+                className={`fixed right-0 bg-black/90 top-[84px] flex gap-8 h-screen w-1/2 flex-col items-start justify-start p-12 ${isOpen ? 'block' : 'hidden'}`}
+            >
+                <ul className="flex flex-col gap-8">
+                    <li className="list-none  md:flex flex-row gap-10 mr-10">
+                <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.2}}    
+                >
+                    <Link to="/#about" className="text-white hover:text-gray-300">About</Link>
+                </motion.div>
+                </li>
+                <li className="list-none  md:flex flex-row gap-10 mr-10">
+                <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.4}}    
+                >
+                    <Link to="/" className="text-white hover:text-gray-300">Work</Link>
+                </motion.div>
+                </li>
+                <li className="list-none  md:flex flex-row gap-10 mr-10">
+                <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
+                >
+                    <Link to="/" className="text-white hover:text-gray-300">Tech</Link>
+                </motion.div>
+                </li>
+                <li className="list-none  md:flex flex-row gap-10 mr-10">
+                <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
+                >
+                    <Link to="/" className="text-white hover:text-gray-300">Contact</Link>
+                </motion.div>
+                </li>
+            </ul>
+            
+            <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.6}}   
+                    className=" md:flex" 
+                >
+                    <Link to="/#about" className="text-white hover:text-blue-300">
+                        <BsLinkedin/>
+                    </Link>
+            </motion.div>
+            </motion.div> 
+        )}
     </nav>
   )
 }
