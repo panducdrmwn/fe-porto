@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from '../assets/p-high-resolution-logo.png';
 import {motion} from 'framer-motion'
-import {BsLinkedin} from 'react-icons/bs'
+import {BsLinkedin, BsGithub} from 'react-icons/bs'
 import {BiX, BiMenu} from 'react-icons/bi'
 import { useState } from "react";
 
@@ -61,6 +61,20 @@ export default function Navbar() {
                 </li>
             </ul>
 
+            <ul className="hidden md:flex gap-1">
+                <li className="list-none hidden md:flex flex-row gap-10 mr-10">
+            <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.2}}   
+                    className="hidden md:flex" 
+                >
+                    <Link to="/#about" className="text-white hover:text-blue-300">
+                        <BsGithub/>
+                    </Link>
+            </motion.div>
+            </li>
+            <li className="list-none hidden md:flex flex-row gap-10 mr-10">
             <motion.div 
                     initial={{opacity: 0, x: -100}}
                     animate={{opacity: 1, x: 0}}
@@ -71,6 +85,8 @@ export default function Navbar() {
                         <BsLinkedin/>
                     </Link>
             </motion.div>
+            </li>
+            </ul>
         </motion.section>
 
         {isOpen ? (
@@ -126,17 +142,34 @@ export default function Navbar() {
                 </li>
             </ul>
             
+            <ul className="flex md:flex gap-1">
+                <li className="list-none  md:flex flex-row gap-10 mr-10">
             <motion.div 
                     initial={{opacity: 0, x: -100}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.6}}   
                     className=" md:flex" 
-                >
+            >
                     <Link to="/#about" className="text-white hover:text-blue-300">
                         <BsLinkedin/>
                     </Link>
             </motion.div>
-            </motion.div> 
+            </li>
+            <li>
+            <motion.div 
+                    initial={{opacity: 0, x: -100}}
+                    animate={{opacity: 1, x: 0}}
+                    transition={{duration: 1, ease: 'easeOut', delay: 0.2}}   
+                    className=" md:flex" 
+                >
+                    <Link to="/#about" className="text-white hover:text-blue-300">
+                        <BsGithub/>
+                    </Link>
+            </motion.div>
+            </li>
+            </ul> 
+            </motion.div>
+            
         )}
     </nav>
   )

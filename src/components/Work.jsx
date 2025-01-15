@@ -10,7 +10,7 @@ const Work = () => {
         <p className='text-gray-400 text-5xl font-bold'>Work Experience</p>
     <VerticalTimeline>
         <VerticalTimelineElement
-            className="vertical-timeline-element--work"
+            className="vertical-timeline-element--work text-gray-200"
             date="2008 - 2010"
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={<BsLinkedin />}
