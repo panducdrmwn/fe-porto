@@ -12,7 +12,7 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div className=" -z-10 min-h-screen w-full justify-center items-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]">
+    <div className=" -z-10 min-h-screen w-full flex flex-col justify-center items-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] no-scrollbar overflow-y-hidden">
      
        <Navbar />
        <div className="relative z-0">
@@ -20,9 +20,15 @@ function App() {
           <StarsCanvas/>
        </div>
        <Work/>
-       <Contact/>
-       <Projects/>
        <Tech/>
+       <Projects/>
+       <div className="relative z-0 w-full flex justify-center">
+          <Contact/>
+          <StarsCanvas/>
+       </div>
+       
+      
+       
      
     </div>
     </BrowserRouter>
