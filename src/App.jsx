@@ -11,7 +11,7 @@ import Work from './components/Work'
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/fe-porto'>
     <div className=" -z-10 min-h-screen w-full flex flex-col justify-center items-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] no-scrollbar overflow-y-hidden">
      
        <Navbar />
