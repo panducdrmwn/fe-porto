@@ -4,7 +4,7 @@ import {motion} from 'framer-motion'
 
 const Tech = () => {
   return (
-    <motion.section className="flex flex-col justify-center items-center gap-10 pt-24">
+    <motion.section id='tech' className="flex flex-col justify-center items-center gap-10 pt-24 scroll-smooth">
     <motion.div
         className="flex flex-col justify-center items-center gap-10 pt-24"
         initial={{opacity: 0, y: -100}}

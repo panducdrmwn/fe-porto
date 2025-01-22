@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 export default function Hero() {
   return (
     <motion.section>
-    <div id="home" className="px-16 flex flex-col gap-5 min-h-screen w-full 
+    <div id="home" className="px-16 flex flex-col gap-5 min-h-screen w-full scroll-smooth 
     items-center justify-center py-28 md:px-32">
       <motion.div 
         initial={{opacity: 0, y: -100}}
