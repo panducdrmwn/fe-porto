@@ -4,6 +4,7 @@ import {motion} from 'framer-motion'
 import telkom from '../assets/telkom.png'
 import agit from '../assets/agit.png'
 import ecgo from '../assets/ecgo.png'
+import bg from '../assets/bg.png'
 
 const Work = () => {
   return (
@@ -13,11 +14,11 @@ const Work = () => {
         <p className='text-gray-400 text-5xl font-bold'>Work Experience</p>
     <VerticalTimeline>
         <VerticalTimelineElement
-            className="vertical-timeline-element--work text-gray-300"
-            contentStyle={{ background: 'rgb(79, 50, 104)'}}
+            id='vertical-timeline-element--work'
+            contentStyle={{background:'transparent', backgroundImage: `url(${bg})` , borderRadius: '16px', boxShadow:' 0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter:' blur(19px)',  border: '1px solid rgba(255, 255, 255, 0.3)', color: 'white'}}
             contentArrowStyle={{ borderRight: '7px solid  rgb(79, 50, 104)' }}
             date="June 2016 - October 2016"
-            iconStyle={{ background: 'rgb(111, 104, 104)', color: '#fff' }}
+            iconStyle={{ background: 'rgb(111, 104, 104)'}}
             icon={<div className='flex justify-center items-center w-full h-full'>
                 <img 
                     src={telkom}
@@ -30,13 +31,14 @@ const Work = () => {
             <h4 className="text-xl ">PT. Telkom Indonesia</h4>
             <h4 className=" vertical-timeline-element-subtitle">Padang, INA</h4>
             <ul className='list-disc mt-5 ml-5 space-y-2'>
-                <li> analyzing how the fibre optic system works in West
+                <li> Analyzing how the fiber optic system works in West
                 Sumatera. 
                 </li>
             </ul>
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work"
+            contentStyle={{background:'transparent', backgroundImage: `url(${bg})`,  backgroundSize: 'cover', borderRadius: '16px', boxShadow:' 0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter:' blur(29px)',  border: '1px solid rgba(255, 255, 255, 0.3)', color: 'white'}}
             contentArrowStyle={{ borderRight: '7px solid  #fff' }}
             date="September 2022 - January 2024"
             dateClassName='text-white'
@@ -66,7 +68,7 @@ const Work = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
             className="vertical-timeline-element--work text-gray-50"
-            contentStyle={{ background: 'rgb(79, 50, 104)' }}
+            contentStyle={{ background:'transparent', backgroundImage: `url(${bg})`,  backgroundSize: 'cover', borderRadius: '16px', boxShadow:' 0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter:' blur(29px)',  border: '1px solid rgba(255, 255, 255, 0.3)', color: 'white'}}
             contentArrowStyle={{ borderRight: '7px solid  rgb(79, 50, 104)' }}
             date="February 2024 - January 2025"
             iconStyle={{ background: '#fff', color: '#fff' }}

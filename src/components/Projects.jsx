@@ -1,7 +1,6 @@
 import ProjectCard from "./ProjectCard"
 import bg from '../assets/bg.png'
 import { FaLocationArrow } from "react-icons/fa"
-
 import {motion} from 'framer-motion'
 import { PinContainer } from "./3d-pin"
 import { projects } from "./constants/Constant"
@@ -17,7 +16,13 @@ const Projects = () => {
       </span>
       <div className="flex flex-wrap items-center justify-center p-4 rounded-5xl w-full gap-16 ">
         {projects.map((item) =>(
-          <div  key={item?.id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[85vw]">
+          <motion.div  
+            key={item?.id} 
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[85vw]"
+            initial={{opacity: 0, y: -100}}
+            animate={{opacity: 1, y: 0}}
+            transition={{duration: 1, ease: 'easeOut', delay: item.id}}      
+          >
           <PinContainer
             title={item?.title}
             href={item?.link}
@@ -57,7 +62,7 @@ const Projects = () => {
                 </div>
             </div>
           </PinContainer>
-        </div>
+        </motion.div>
         ))
         }
       
