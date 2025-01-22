@@ -5,6 +5,12 @@ export default function Hero() {
     <motion.section>
     <div id="home" className="px-16 flex flex-col gap-5 min-h-screen w-full scroll-smooth 
     items-center justify-center py-28 md:px-32">
+      <video
+        autoPlay
+        muted
+        loop
+        className='rotate-180 absolute top-[-340px] left-0 z-[-1] w-full h-full object-cover'
+      ></video>
       <motion.div 
         initial={{opacity: 0, y: -100}}
         animate={{opacity: 1, y: 0}}

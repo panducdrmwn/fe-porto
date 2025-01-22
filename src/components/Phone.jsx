@@ -5,10 +5,11 @@ import { useLoader } from "@react-three/fiber"
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 
 
+
 useGLTF.preload('./phone4/scene.gltf')
 
 const Phone = () => {
-  const {nodes, phone, materials, animations, scene} = useGLTF( './alien.glb')
+  const {nodes, phone, materials, animations, scene} = useGLTF( './fe-porto/alien.glb')
   const {actions, clips } = useAnimations(animations, scene)
   const scroll = useScroll()
 
