@@ -35,35 +35,35 @@ export default function Navbar() {
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.2}}    
                 >
-                    <Link to="/about" className="text-white hover:text-pink-500  " onClick={() => document.getElementById('home')?.scrollIntoView({behavior: 'smooth'})}>About</Link>
+                    <Link to="/" className="text-white hover:text-pink-500  " onClick={() => document.getElementById('home')?.scrollIntoView({behavior: 'smooth'})}>About</Link>
                 </motion.div>
                 <motion.div 
                     initial={{opacity: 0, x: -100}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.4}}    
                 >
-                    <Link to="/work" className="text-white hover:text-pink-500" onClick={() => document.getElementById('work')?.scrollIntoView({behavior: 'smooth'})}>Work</Link>
+                    <Link to="/" className="text-white hover:text-pink-500" onClick={() => document.getElementById('work')?.scrollIntoView({behavior: 'smooth'})}>Work</Link>
                 </motion.div>
                 <motion.div 
                     initial={{opacity: 0, x: -100}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
                 >
-                    <Link to="/tech" className="text-white hover:text-pink-500" onClick={() => document.getElementById('tech')?.scrollIntoView({behavior: 'smooth'})}>Tech</Link>
+                    <Link to="/" className="text-white hover:text-pink-500" onClick={() => document.getElementById('tech')?.scrollIntoView({behavior: 'smooth'})}>Tech</Link>
                 </motion.div>
                 <motion.div 
                     initial={{opacity: 0, x: -100}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
                 >
-                    <Link to="/project" className="text-white hover:text-pink-500" onClick={() => document.getElementById('project')?.scrollIntoView({behavior: 'smooth'})}>Project</Link>
+                    <Link to="/" className="text-white hover:text-pink-500" onClick={() => document.getElementById('project')?.scrollIntoView({behavior: 'smooth'})}>Project</Link>
                 </motion.div>
                 <motion.div 
                     initial={{opacity: 0, x: -100}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
                 >
-                    <Link to="/contact" className="text-white hover:text-pink-500" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>Contact</Link>
+                    <Link to="/" className="text-white hover:text-pink-500" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>Contact</Link>
                 </motion.div>
                 </li>
             </ul>
