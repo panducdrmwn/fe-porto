@@ -19,7 +19,7 @@ export default function Hero() {
         cursor-pointer rounded-full shadow-xl shadow-indigo-900
         transition-all duration-300 hover:-translate-y-5
         hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600
-        md:w-[350px]'/>
+        md:w-[350px] animate-pulse'/>
       </motion.div>
       <motion.div 
         initial={{opacity: 0, y: 100}}
