@@ -9,7 +9,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 useGLTF.preload('./phone4/scene.gltf')
 
 const Phone = () => {
-  const {nodes, phone, materials, animations, scene} = useGLTF( './fe-porto/alien.glb') //hapurs /fe-porto sblm deploy
+  const {nodes, phone, materials, animations, scene} = useGLTF( './alien.glb') //hapurs /fe-porto sblm deploy
   const {actions, clips } = useAnimations(animations, scene)
   const scroll = useScroll()
 
