@@ -10,8 +10,8 @@ const Work = () => {
   return (
     <>
     <motion.div id='work' className='flex flex-col items-center justify-center gap-10 scroll-smooth'>
-        <p className='bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent text-3xl'>What I Have Done So Far</p>
-        <p className='text-gray-400 text-5xl font-bold'>Work Experience</p>
+        <p className='text-2xl text-center bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent xl:text-3xl'>What I Have Done So Far</p>
+        <p className='text-center text-gray-400 text-5xl font-bold'>Work Experience</p>
     <VerticalTimeline>
         <VerticalTimelineElement
             id='vertical-timeline-element--work'

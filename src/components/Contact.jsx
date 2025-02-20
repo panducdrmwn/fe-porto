@@ -54,9 +54,9 @@ const Contact = () => {
     <div id='contact' className='flex flex-col justify-center items-center pt-16 w-full gap-4 scroll-smooth'>
       <p className='bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text text-3xl'>Get In Touch</p>
       <h3 className='font-extrabold text-5xl text-gray-400'>Contact</h3>
-    <div className="xl:mt-12  xl:flex-row flex flex-col-reverse gap-10 overflow-hidden w-3/4">
+    <div className="xl:mt-12 pb-8 xl:flex-row flex flex-col-reverse gap-10 overflow-hidden w-3/4 ">
         <motion.div 
-          className='flex-[0.75] p-8 rounded-xl h-full w-1/2 bg-gray-0 bg-clip-padding backdrop-filter backdrop-blur-[1px] bg-opacity-0 '
+          className='w-full items-center flex-[0.75] xl:p-8 rounded-xl h-full xl:w-1/2 bg-gray-0 bg-clip-padding backdrop-filter backdrop-blur-[1px] bg-opacity-0 '
         >
           <form
             ref={formRef}
@@ -111,7 +111,7 @@ const Contact = () => {
           </form>
         </motion.div>
 
-        <motion.div className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] no-scrollbar w-1/2'>
+        <motion.div className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] no-scrollbar xl:w-1/2'>
           <PhoneCanvas className='no-scrollbar'/>
         </motion.div>
     </div>

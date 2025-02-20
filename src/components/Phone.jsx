@@ -9,25 +9,23 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'
 useGLTF.preload('./phone4/scene.gltf')
 
 const Phone = () => {
-  const {nodes, phone, materials, animations, scene} = useGLTF( './alien.glb')
+  const {nodes, phone, materials, animations, scene} = useGLTF( './fe-porto/alien.glb') //hapurs /fe-porto sblm deploy
   const {actions, clips } = useAnimations(animations, scene)
   const scroll = useScroll()
 
   useEffect(()=>{
-    console.log(actions)
-    actions["mixamo.com"].play().paused = true
+    actions["mixamo.com"].play()
   },[])
 
-  useFrame (()=>
-    (actions["mixamo.com"].time =  
-      (actions["mixamo.com"].getClip().duration*scroll.offset) / 3
-    )
-  )
+  // useFrame (()=>
+  //   (actions["mixamo.com"].time =  
+  //     (actions["mixamo.com"].getClip().duration*scroll.offset) / 3
+  //   )
+  // )
  
  return (
     <group>
-    <primitive object={scene} scale={1.5} position={[0, -2, 0]}
-    />
+      <primitive object={scene} scale={1.5} position={[0, -2, 0]}/>
     </group>
   )
 }

@@ -8,13 +8,13 @@ import { projects } from "./constants/Constant"
 const Projects = () => {
   return (
     <div id="project" className="flex flex-col items-center justify-center py-20 scroll-smooth">
-      <p className='heading bg-gradient-to-r from-purple-500 to-cyan-500 py-10 bg-clip-text text-transparent text-3xl pt-10'>
-        Small selection of recent projects
+      <p className='px-2 text-center heading bg-gradient-to-r from-purple-500 to-cyan-500 py-10 bg-clip-text text-transparent text-3xl pt-10'>
+        Small Selection of Recent Projects
       </p>
       <span className="text-gray-400 text-5xl font-bold ">
         My Projects
       </span>
-      <div className="flex flex-wrap items-center justify-center p-4 rounded-5xl w-full gap-16 ">
+      <div className="mx-2 flex flex-wrap items-center justify-center p-4 rounded-5xl w-full gap-16 ">
         {projects.map((item) =>(
           <motion.div  
             key={item?.id} 
@@ -27,7 +27,7 @@ const Projects = () => {
             title={item?.title}
             href={item?.link}
           >
-            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[25rem] h-[4=30rem] ">
+            <div className="sm:w-[25rem] flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[4=30rem] ">
               <img className="flex flex-1 w-full rounded-lg my-4 " src={item?.img} alt="Agit UI" />
               <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                {item?.title}
