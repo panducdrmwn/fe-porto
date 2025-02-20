@@ -72,7 +72,7 @@ export const technologies = [
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
       img: ecgo,
       iconLists: [reactjs, css, javascript, mongodb],
-      link: "/ui.earth.com",
+      link: "/ecgoevmoto.com",
     },
     {
       id: 2,
