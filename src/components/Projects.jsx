@@ -14,7 +14,7 @@ const Projects = () => {
       <span className="text-gray-400 text-5xl font-bold ">
         My Projects
       </span>
-      <div className="mx-2 flex flex-wrap items-center justify-center p-4 rounded-5xl w-full gap-16 ">
+      <div className="mx-2 flex flex-wrap items-center justify-center p-4 mt-6 srounded-5xl w-full gap-16 ">
         {projects.map((item) =>(
           <motion.div  
             key={item?.id} 
