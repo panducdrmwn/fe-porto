@@ -75,8 +75,8 @@ export const technologies = [
       title: "ECGO EVMOTO",
       des: "A company website including company profile, product showcase, promotion, and ecommerce for buying the product.",
       img: ecgo,
-      iconLists: [reactjs, css, javascript, postgres],
-      link: "https://ecgoevmoto.com",
+      iconLists: [reactjs, css, javascript, mongodb],
+      link: "/ui.earth.com",
     },
     {
       id: 2,
