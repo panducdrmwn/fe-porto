@@ -40,7 +40,7 @@ const Work = () => {
             className="vertical-timeline-element--work"
             contentStyle={{background:'transparent', backgroundImage: `url(${bg})`,  backgroundSize: 'cover', borderRadius: '16px', boxShadow:' 0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter:' blur(29px)',  border: '1px solid rgba(255, 255, 255, 0.3)', color: 'white'}}
             contentArrowStyle={{ borderRight: '7px solid  #fff' }}
-            date="September 2022 - January 2024"
+            date="February 2022 - January 2024"
             dateClassName='text-white'
             iconStyle={{ background: 'rgb(123, 115, 109)', color: '#fff' }}
             icon={<div className='flex justify-center items-center w-full h-full'>
