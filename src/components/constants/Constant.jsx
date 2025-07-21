@@ -12,6 +12,10 @@ import threejs from "../../assets/threejs.svg";
 import git from "../../assets/git.png";
 import figma from "../../assets/figma.png";  
 import ecgo from '../../assets/asset-ecgo.png'
+import firebase from '../../assets/firebase.png'
+import postgres from '../../assets/postgres.png'
+import pokedex from "../../assets/pokedex.png"
+import black from "../../assets/black.png"
 
 export const technologies = [
     {
@@ -69,26 +73,26 @@ export const technologies = [
     {
       id: 1,
       title: "ECGO EVMOTO",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
+      des: "A company website including company profile, product showcase, promotion, and ecommerce for buying the product.",
       img: ecgo,
       iconLists: [reactjs, css, javascript, mongodb],
-      link: "https://www.ecgoevmoto.com",
+      link: "/ui.earth.com",
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: ecgo,
-      iconLists: [reactjs, tailwind, css, javascript,redux],
-      link: "/ui.yoom.com",
+      title: "Pokedex",
+      des: "A Pokedex app showing list of pokemons with some details and descriptions of each of the pokemons.",
+      img: pokedex,
+      iconLists: [reactjs, tailwind, css, javascript],
+      link: "https://github.com/panducdrmwn/pokedex-project",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: ecgo,
-      iconLists: [reactjs, tailwind, javascript, ],
-      link: "/ui.aiimg.com",
+      title: "Live Chat",
+      des: "This is a simple app showcasing the use of Firebase to create Real-Time Chat App.\n Firebase allows us to easily retrieve data for the database in real-time.",
+      img: black,
+      iconLists: [reactjs, tailwind, javascript, firebase],
+      link: "https://github.com/panducdrmwn/chat-app",
     },
     // {
     //   id: 4,
