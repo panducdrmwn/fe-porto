@@ -5,6 +5,7 @@ import telkom from '../assets/telkom.png'
 import agit from '../assets/agit.png'
 import ecgo from '../assets/ecgo.png'
 import bg from '../assets/bg.png'
+import ccm from '../assets/ccm.jpg'
 
 const Work = () => {
   return (
@@ -96,7 +97,36 @@ const Work = () => {
                 </li>
             </ul>
         </VerticalTimelineElement>
-       
+        <VerticalTimelineElement
+            className="vertical-timeline-element--work text-gray-50"
+            contentStyle={{ background:'transparent', backgroundImage: `url(${bg})`,  backgroundSize: 'cover', borderRadius: '16px', boxShadow:' 0 4px 30px rgba(0, 0, 0, 0.1)', backdropFilter:' blur(29px)',  border: '1px solid rgba(255, 255, 255, 0.3)', color: 'white'}}
+            contentArrowStyle={{ borderRight: '7px solid  rgb(79, 50, 104)' }}
+            date="January 2026 - Present"
+            iconStyle={{ background: '#fff', color: '#fff' }}
+            icon={<div className='flex justify-center items-center w-full h-full'>
+                <img 
+                    src={ccm}
+                    className='w-[60%] h-[60%] object-contain'
+                />
+             </div>
+             }
+        >
+            <h3 className=" text-3xl font-semibold">Frontend Developer</h3>
+            <h4 className="text-xl  ">College of Contract Management United Kingdom</h4>
+            <h4 className=" vertical-timeline-element-subtitle">Jakarta, INA</h4>
+            <ul className='list-disc mt-5 ml-5 space-y-2'>
+                <li>  Responsible for making website / web application mainly using React JS
+                and adding new pages or functions into existing webapps.
+                </li>
+                <li> Fetching data from data from database.
+                </li>
+                <li>  UI design using Figma, coding and create reusable objects and wireframes
+                for web pages and email templates.
+                </li>
+                <li>  Identifying and resolve frontend-related issues and bugs.
+                </li>
+            </ul>
+        </VerticalTimelineElement>
       
     </VerticalTimeline>
     </motion.div>

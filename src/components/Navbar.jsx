@@ -42,28 +42,28 @@ export default function Navbar() {
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.4}}    
                 >
-                    <Link to="/" className="text-white hover:text-pink-500" onClick={() => document.getElementById('work')?.scrollIntoView({behavior: 'smooth'})}>Work</Link>
+                    <Link to="/" className="text-white hover:text-purple-500" onClick={() => document.getElementById('work')?.scrollIntoView({behavior: 'smooth'})}>Work</Link>
                 </motion.div>
                 <motion.div 
                     initial={{opacity: 0, x: -100}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
                 >
-                    <Link to="/" className="text-white hover:text-pink-500" onClick={() => document.getElementById('tech')?.scrollIntoView({behavior: 'smooth'})}>Tech</Link>
+                    <Link to="/" className="text-white hover:text-purple-500" onClick={() => document.getElementById('tech')?.scrollIntoView({behavior: 'smooth'})}>Tech</Link>
                 </motion.div>
                 <motion.div 
                     initial={{opacity: 0, x: -100}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
                 >
-                    <Link to="/" className="text-white hover:text-pink-500" onClick={() => document.getElementById('project')?.scrollIntoView({behavior: 'smooth'})}>Project</Link>
+                    <Link to="/" className="text-white hover:text-purple-500" onClick={() => document.getElementById('project')?.scrollIntoView({behavior: 'smooth'})}>Project</Link>
                 </motion.div>
                 <motion.div 
                     initial={{opacity: 0, x: -100}}
                     animate={{opacity: 1, x: 0}}
                     transition={{duration: 1, ease: 'easeOut', delay: 0.6}}    
                 >
-                    <Link to="/" className="text-white hover:text-pink-500" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>Contact</Link>
+                    <Link to="/" className="text-white hover:text-purple-500" onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}>Contact</Link>
                 </motion.div>
                 </li>
             </ul>
@@ -76,7 +76,7 @@ export default function Navbar() {
                     transition={{duration: 1, ease: 'easeOut', delay: 0.2}}   
                     className="hidden md:flex" 
                 >
-                    <Link to="https://github.com/panducdrmwn" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300">
+                    <Link to="https://github.com/panducdrmwn" target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-600">
                         <BsGithub/>
                     </Link>
             </motion.div>
@@ -88,7 +88,7 @@ export default function Navbar() {
                     transition={{duration: 1, ease: 'easeOut', delay: 0.2}}   
                     className="hidden md:flex" 
                 >
-                    <Link to="https://www.linkedin.com/in/pandu-cakrawala-darmawan/"  target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-300">
+                    <Link to="https://www.linkedin.com/in/pandu-cakrawala-darmawan/"  target="_blank" rel="noopener noreferrer" className="text-white hover:text-purple-600">
                         <BsLinkedin/>
                     </Link>
             </motion.div>
