@@ -1,6 +1,7 @@
 import poto from "../assets/poto gaul.jpg";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
+import { RandomizeTextOnHover } from "./RandomizeText";
 
 export default function Hero() {
   return (
@@ -40,13 +41,8 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
           className="flex flex-col  text-center items-center justify-center gap-3"
         >
-          <h1
-          
-            className="font-Inter font-semibold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent
-         text-5xl md:text-7xl"
-          >
-           <ReactTyped strings={["Pandu Cakrawala Darmawan"]} typeSpeed={100} loop/>
-          </h1>
+          <RandomizeTextOnHover originalText="PANDU CAKRAWALA DARMAWAN" />
+
           <h3
             className="bg-gradient-to-r from-pink-500 to-blue-500 bg-clip-text text-transparent
          text-2xl font-light md:text-3xl"

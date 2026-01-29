@@ -8,7 +8,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-         'Inter': ['inter', 'sans-serif']
+         'Inter': ['inter', 'sans-serif'],
+         mono: ['"Space Mono"', 'monospace']
       },
       animation: {
         'shimmer-ui': 'shimmer-ui 3s infinite linear',

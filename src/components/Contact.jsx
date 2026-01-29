@@ -66,7 +66,7 @@ const Contact = () => {
             <label className='flex flex-col py-4 '>
               <span className='mb-2 text-white'>Your Name</span>
               <input
-                className='py-4 px-6 rounded-lg outline-none border-none font-medium'
+                className='py-4 px-6 rounded-lg  bg-transparent border border-white  font-medium'
                 type="text"
                 name="name"
                 placeholder='Whats your name?'
@@ -78,7 +78,7 @@ const Contact = () => {
             <label className='flex flex-col py-4  '>
               <span className='mb-2 text-white'>Your Email</span>
               <input
-                className='py-4 px-6 rounded-lg outline-none border-none font-medium'
+                className='py-4 px-6 rounded-lg  bg-transparent border border-white  font-medium'
                 type="text"
                 name="email"
                 placeholder='Whats your email address?'
@@ -91,7 +91,7 @@ const Contact = () => {
               <span className='mb-2  text-white'>What's Your Thoughts</span>
               <textarea
                 rows="7"
-                className='py-4 px-6 rounded-lg outline-none border-none font-medium'
+                className='py-4 px-6 rounded-lg  bg-transparent border border-white  font-medium'
                 type="text"
                 name="message"
                 placeholder='What do you want to say?'

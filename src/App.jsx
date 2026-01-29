@@ -8,13 +8,19 @@ import Tech from './components/Tech'
 import StarsCanvas from './components/StarsCanvas'
 import Work from './components/Work'
 import Scene from './components/Scene'
+import { useEffect } from 'react'
+import CursorGlow from './components/CursorGlow'
+import MarqueeStack from './components/MarqueeStack'
 
 function App() {
+ // Hide the default cursor for a better effect
 
   return (
+   <> 
     <BrowserRouter basename='/fe-porto'>
+    
     <div className=" -z-10 min-h-screen w-full flex flex-col justify-center items-center [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] no-scrollbar overflow-y-hidden">
-     
+<CursorGlow/>
        <Navbar />
        <div className="relative w-full z-0">
           <Hero/>
@@ -22,20 +28,20 @@ function App() {
        </div>
 
        <Work/>
-
+     
        <Tech/>
+       
        <Projects/>
        <div className="relative z-0 w-full flex justify-center">
           <Contact/>
-          {/* <StarsCanvas/> */}
+          <StarsCanvas/>
        </div>
        
-      
-       
+    
      
     </div>
     </BrowserRouter>
-   
+   </>
   )
 }
 
