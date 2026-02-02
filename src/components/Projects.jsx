@@ -4,8 +4,12 @@ import { FaLocationArrow } from "react-icons/fa"
 import {motion} from 'framer-motion'
 import { PinContainer } from "./3d-pin"
 import { projects } from "./constants/Constant"
+import { useRef } from "react"
 
 const Projects = () => {
+const videoRef = useRef(null);
+ 
+
   return (
     <div id="project" className="flex flex-col items-center justify-center py-20 scroll-smooth">
       <p className='px-2 text-center heading bg-gradient-to-r from-purple-500 to-cyan-500 py-10 bg-clip-text text-transparent text-3xl pt-10'>
@@ -21,14 +25,15 @@ const Projects = () => {
             className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[85vw]"
             initial={{opacity: 0, y: -100}}
             animate={{opacity: 1, y: 0}}
-            transition={{duration: 1, ease: 'easeOut', delay: item.id}}      
+            transition={{duration: 1, ease: 'easeOut', delay: item.id}}    
           >
           <PinContainer
             title={item?.title}
             href={item?.link}
           >
             <div className="sm:w-[25rem] flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[4=30rem] ">
-              <img className="flex flex-1 w-full rounded-lg my-4 " src={item?.img} alt="Agit UI" />
+              {/* <img className="flex flex-1 w-full rounded-lg my-4 " src={item?.img} alt="Agit UI" /> */}
+              <video className="flex flex-1 w-full rounded-lg my-4 " src={item?.img} autoPlay loop muted controls></video>
               <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                {item?.title}
               </h3>

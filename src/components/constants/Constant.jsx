@@ -16,6 +16,8 @@ import firebase from '../../assets/firebase.png'
 import postgres from '../../assets/postgres.png'
 import pokedex from "../../assets/pokedex.png"
 import black from "../../assets/black.png"
+import GSM from "../../assets/GSM.mp4"
+import ECGO from "../../assets/ECGO.mp4"
 
 export const technologies = [
     {
@@ -74,17 +76,17 @@ export const technologies = [
       id: 1,
       title: "ECGO EVMOTO",
       des: "A company website including company profile, product showcase, promotion, and ecommerce for buying the product.",
-      img: ecgo,
+      img: ECGO,
       iconLists: [reactjs, css, javascript, mongodb],
-      link: "/ui.earth.com",
+      link: "https://ecgoevmoto.com",
     },
     {
       id: 2,
-      title: "Pokedex",
-      des: "A Pokedex app showing list of pokemons with some details and descriptions of each of the pokemons.",
-      img: pokedex,
-      iconLists: [reactjs, tailwind, css, javascript],
-      link: "https://github.com/panducdrmwn/pokedex-project",
+      title: "Global Skills Meet (GSM)",
+      des: "A landing page for a product by UNICCM UK.",
+      img: GSM,
+      iconLists: [reactjs, tailwind, css, typescript],
+      link: "https://globalskillsmeet.com",
     },
     {
       id: 3,
