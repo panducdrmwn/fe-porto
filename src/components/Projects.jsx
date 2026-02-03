@@ -7,8 +7,6 @@ import { projects } from "./constants/Constant"
 import { useRef } from "react"
 
 const Projects = () => {
-const videoRef = useRef(null);
- 
 
   return (
     <div id="project" className="flex flex-col items-center justify-center py-20 scroll-smooth">
@@ -31,9 +29,8 @@ const videoRef = useRef(null);
             title={item?.title}
             href={item?.link}
           >
-            <div className="sm:w-[25rem] flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[4=30rem] ">
-              {/* <img className="flex flex-1 w-full rounded-lg my-4 " src={item?.img} alt="Agit UI" /> */}
-              <video className="flex flex-1 w-full rounded-lg my-4 " src={item?.img} autoPlay loop muted controls></video>
+            <div className="sm:w-[25rem] flex basis-full flex-col justify-between p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[30rem] ">
+              <video onMouseOver={(e)=>e.target.play()} onMouseOut={(e)=>e.target.pause()}  className="flex flex-1 w-full rounded-lg my-4 " src={item?.img}  preload="auto"  loop muted ></video>
               <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                {item?.title}
               </h3>

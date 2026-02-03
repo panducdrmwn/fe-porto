@@ -83,7 +83,7 @@ export const technologies = [
     {
       id: 2,
       title: "Global Skills Meet (GSM)",
-      des: "A landing page for a product by UNICCM UK.",
+      des: "A landing page for a product by UNICCM UK to showcase and highlight their product. You can purchase the product from the website.",
       img: GSM,
       iconLists: [reactjs, tailwind, css, typescript],
       link: "https://globalskillsmeet.com",
