@@ -1,4 +1,3 @@
-import poto from "../assets/poto gaul.jpg";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { RandomizeTextOnHover } from "./RandomizeText";
@@ -25,21 +24,15 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
         >
-          <img
-            src={poto}
-            alt="poto"
-            className="w-[300px]
-        cursor-pointer rounded-full shadow-xl shadow-indigo-900
-        transition-all duration-300 hover:-translate-y-5
-        hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600
-        md:w-[350px] animate-pulse"
-          />
+          <div className="w-[500px] h-[500px] md:w-[750px] md:h-[750px] rounded-full overflow-hidden shadow-xl shadow-indigo-900 transition-all duration-300 hover:-translate-y-5 hover:scale-105 hover:shadow-2xl hover:shadow-indigo-600">
+           <iframe src='https://my.spline.design/robotfollowcursorforlandingpagemc-FzxEzYkeGflhfc6YECPhr8ud/' frameborder='0' width='100%' height='100%'></iframe>
+          </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="flex flex-col  text-center items-center justify-center gap-3"
+          className="flex flex-col  text-center items-center justify-center gap-3 mt-4"
         >
           <RandomizeTextOnHover originalText="PANDU CAKRAWALA DARMAWAN" />
 
